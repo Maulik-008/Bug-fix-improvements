@@ -31,6 +31,7 @@ GridComponent.propTypes = {
   containerProps: PropTypes.object,
   gridConfiguration: PropTypes.arrayOf(
     PropTypes.shape({
+      columnCount: PropTypes.number.isRequired,
       sizes: PropTypes.arrayOf(
         PropTypes.shape({
           xs: PropTypes.number,
@@ -41,5 +42,4 @@ GridComponent.propTypes = {
   ).isRequired,
   children: PropTypes.node.isRequired,
 };
-
 export default GridComponent;
